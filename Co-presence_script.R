@@ -39,7 +39,7 @@ quantile(tt, probs = c(0.025, 0.5, 0.975)) # Estimate from null model distributi
 
 
 # Visualize results
-hist(tt,labels=T, breaks=max(tt), xlim = range(min(tt),max(tt))) #histogram of co-presence distribution from null model
+hist(tt,labels=T, main=NULL, xlab="Co-presences", breaks=max(tt), xlim = range(min(tt)-2,max(tt))) #histogram of co-presence distribution from null model
 abline(v=rs[3],lwd=2,col="red") # plot red line for showing real data co-presence value
 abline(v=quantile(tt, probs = c(0.025,  0.975)), lwd=2,col="blue", lty=3) # plot blue lines for showing 2.5 and 97.5 percentiles of null distribution
 
