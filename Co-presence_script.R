@@ -1,7 +1,7 @@
 # written by G. Magoga, giulia.magoga@unimi.it
 
 
-### test statistical significance of pathogens co-presence in the same host
+### test statistical significance of microorganisms co-presence in the same host
 
 data=read.csv("example.csv", sep=";") #read data frame
 
